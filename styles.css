@@ -72,10 +72,9 @@ body {
 }
 
 .banner {
+    background-color: #E9D8A6;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
 }
 
 .banner .column {
@@ -86,11 +85,18 @@ body {
 }
 
 .banner .quote {
-    background-color: #FFFACD;
-    color: #006666;
-    font-size: 1.25rem;
+    color: #0A9396; /* Color */
+    font-family: 'Fredericka the Great', cursive; /* Fredericka the Great font */
+    font-size: 40px; /* Font size */
     padding: 1rem;
     text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+
+.banner .column img {
+    width: 100%; /* Make the image fill its container */
+    max-width: 600px; /* Set maximum width to prevent over-sizing */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .main {
