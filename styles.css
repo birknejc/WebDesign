@@ -6,8 +6,8 @@ body {
 }
 
 .header {
-    background-color: #006666;
-    color: #FFD700;
+    background-color: #005f73;
+    color: #CA6702;
     text-align: center;
     padding: 1rem 0;
 }
@@ -16,27 +16,59 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #006666;
+    background-color: #005f73;
     padding: 1rem;
 }
 
 .navbar .logo {
-    color: #FFD700;
-    font-size: 1.5rem;
+    color: #CA6702;
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    font-family: 'Mulish', sans-serif; /* Mulish font */
+}
+
+.navbar nav {
+    flex-grow: 1; /* Take up remaining space */
+    text-align: center; /* Center the nav items */
 }
 
 .navbar nav ul {
     list-style: none;
     display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
     gap: 1rem;
     margin: 0;
     padding: 0;
 }
 
+.navbar nav ul li {
+    /* Use to adjust styling for each list item if needed */
+}
+
 .navbar nav ul li a {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .auth-links {
+    text-align: right; /* Align content to the right */
+}
+
+.navbar .auth-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .auth-links a:first-child {
+    color: #CA6702; /* Color for Log In */
+}
+
+.navbar .auth-links a:last-child {
+    color: #FFFFFF; /* Color for Sign Up */
 }
 
 .banner {
@@ -81,3 +113,4 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     padding: 0.5rem;
+}
