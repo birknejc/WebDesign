@@ -115,16 +115,59 @@ body {
 }
 
 .footer {
-    background-color: #D2691E;
-    color: #FFFFFF;
+    background-color: #CA6702;
+    color: #222222;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
     flex-wrap: wrap;
+    
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h6 {
+    margin-bottom: 0.5rem;
+}
+
+.footer .social {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .footer .social a {
-    color: #FFFFFF;
+    color: #222222;
     text-decoration: none;
     padding: 0.5rem;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: row; /* Align elements in a row */
+    align-items: center;
+    gap: 0; /* Remove gap between elements */
+}
+
+.subscribe-form input {
+    padding: 0.5rem;
+    border: 1px solid #222222;
+    border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
+    flex: 1; /* Take up available space */
+    max-width: 200px; /* Limit the width of the input */
+}
+
+.subscribe-form button {
+    padding: 0.5rem;
+    background-color: #005f73;
+    color: #ffffff;
+    border: 1px solid #222222;
+    border-left: none; /* Remove left border */
+    border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #0A9396;
 }
