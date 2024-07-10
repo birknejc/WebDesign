@@ -114,6 +114,12 @@ body {
     margin: 0 auto; /* Center horizontally */
 }
 
+.horizontal-bar {
+    background-color: #94D2BD;
+    height: 5px;
+    width: 100%;
+}
+
 .footer {
     background-color: #CA6702;
     color: #222222;
