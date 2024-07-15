@@ -1,3 +1,5 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -22,28 +24,24 @@ body {
 
 .navbar .logo {
     color: #CA6702;
-    font-size: 24px; /* Font size */
-    font-weight: bold; /* Bold font weight */
-    font-family: 'Mulish', sans-serif; /* Mulish font */
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
 }
 
 .navbar nav {
-    flex-grow: 1; /* Take up remaining space */
-    text-align: center; /* Center the nav items */
+    flex-grow: 1;
+    text-align: center;
 }
 
 .navbar nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     margin: 0;
     padding: 0;
-}
-
-.navbar nav ul li {
-    /* Use to adjust styling for each list item if needed */
 }
 
 .navbar nav ul li a {
@@ -54,7 +52,7 @@ body {
 }
 
 .navbar .auth-links {
-    text-align: right; /* Align content to the right */
+    text-align: right;
 }
 
 .navbar .auth-links a {
@@ -64,11 +62,11 @@ body {
 }
 
 .navbar .auth-links a:first-child {
-    color: #CA6702; /* Color for Log In */
+    color: #CA6702;
 }
 
 .navbar .auth-links a:last-child {
-    color: #FFFFFF; /* Color for Sign Up */
+    color: #FFFFFF;
 }
 
 .banner {
@@ -85,18 +83,18 @@ body {
 }
 
 .banner .quote {
-    color: #0A9396; /* Color */
-    font-family: 'Fredericka the Great', cursive; /* Fredericka the Great font */
-    font-size: 40px; /* Font size */
+    color: #0A9396;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
     padding: 1rem;
     text-align: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Text shadow */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .banner .column img {
-    width: 100%; /* Make the image fill its container */
-    max-width: 600px; /* Set maximum width to prevent over-sizing */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
 .main {
@@ -108,10 +106,10 @@ body {
 }
 
 .main img {
-    max-width: 100%; /* Limit image width */
-    max-height: 200px; /* Limit image height */
-    display: block; /* Ensure image is centered */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
 }
 
 .horizontal-bar {
@@ -126,7 +124,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
 .footer-section {
@@ -151,17 +148,17 @@ body {
 
 .subscribe-form {
     display: flex;
-    flex-direction: row; /* Align elements in a row */
+    flex-direction: row;
     align-items: center;
-    gap: 0; /* Remove gap between elements */
+    gap: 0;
 }
 
 .subscribe-form input {
     padding: 0.5rem;
     border: 1px solid #222222;
-    border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
-    flex: 1; /* Take up available space */
-    max-width: 200px; /* Limit the width of the input */
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+    max-width: 200px;
 }
 
 .subscribe-form button {
@@ -169,11 +166,54 @@ body {
     background-color: #005f73;
     color: #ffffff;
     border: 1px solid #222222;
-    border-left: none; /* Remove left border */
-    border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
+    border-left: none;
+    border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
 
 .subscribe-form button:hover {
     background-color: #0A9396;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navbar nav ul li a {
+        padding: 0.5rem;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    .banner .quote {
+        font-size: 24px;
+    }
+
+    .main img {
+        max-height: 150px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input,
+    .subscribe-form button {
+        max-width: 100%;
+        margin: 0.5rem 0;
+    }
 }
