@@ -3,100 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Birky's Beans</title>
 </head>
 <body>
 
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="logo">Birky's Beans</div>
-        <nav>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#About">About</a></li>
-			<li><a href="product.html">Menu</a></li>
-			<li><a href="contact.html">Contact</a></li>
-        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-links ml-auto">
+                <a href="#login" class="nav-link">Log In</a>
+                <a href="#signup" class="nav-link">Sign Up</a>
+            </div>
+        </div>
     </div>
 
     <!-- Sidebar and Main Content -->
-    <div class="content">
-        <div class="sidebar">
-            <h3>Drinks</h3>
-            <ul>
-                <li>Hot Coffees</li>
-                <li>Cold Coffees</li>
-                <li>Yummyness</li>
-                <li>Delightful</li>
-                <li>Mellow Mood</li>
-                <li>Summer Fun</li>
-            </ul>
-            <h3>Food</h3>
-            <ul>
-                <li>Breakfast</li>
-                <li>Lunch</li>
-                <li>Snacks & Sweets</li>
-            </ul>
-        </div>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h3>Drinks</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">Hot Coffees</li>
+                        <li class="nav-item">Cold Coffees</li>
+                        <li class="nav-item">Yummyness</li>
+                        <li class="nav-item">Delightful</li>
+                        <li class="nav-item">Mellow Mood</li>
+                        <li class="nav-item">Summer Fun</li>
+                    </ul>
+                    <h3>Food</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">Breakfast</li>
+                        <li class="nav-item">Lunch</li>
+                        <li class="nav-item">Snacks & Sweets</li>
+                    </ul>
+                </div>
+            </nav>
 
-        <div class="main-content">
-            <h2>Drinks</h2>
-            <div class="item">
-                <img src="images/hot cofee.jpg" alt="Hot Coffees">
-                <p>Hot Coffees</p>
-            </div>
-            <div class="item">
-                <img src="images/cold coffee.jpg" alt="Cold Coffees">
-                <p>Cold Coffees</p>
-            </div>
-            <div class="item">
-                <img src="images/Yummy.jpg" alt="Refreshers Beverages">
-                <p>Yummyness</p>
-            </div>
-            <div class="item">
-                <img src="images/Delight.jpg" alt="Blended Beverages">
-                <p>Delightful</p>
-            </div>
-            <div class="item">
-                <img src="images/Mellow Mood.jpg" alt="Hot Tea">
-                <p>Mellow Mood</p>
-            </div>
-            <div class="item">
-                <img src="images/Summer Fun.jpg" alt="Iced Drinks">
-                <p>Summer Fun</p>
-            </div>
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <h2>Drinks</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="item text-center">
+                            <img src="images/hot cofee.jpg" alt="Hot Coffees" class="img-fluid">
+                            <p>Hot Coffees</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item text-center">
+                            <img src="images/cold coffee.jpg" alt="Cold Coffees" class="img-fluid">
+                            <p>Cold Coffees</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item text-center">
+                            <img src="images/Yummy.jpg" alt="Refreshers Beverages" class="img-fluid">
+                            <p>Yummyness</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item text-center">
+                            <img src="images/Delight.jpg" alt="Blended Beverages" class="img-fluid">
+                            <p>Delightful</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item text-center">
+                            <img src="images/Mellow Mood.jpg" alt="Hot Tea" class="img-fluid">
+                            <p>Mellow Mood</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item text-center">
+                            <img src="images/Summer Fun.jpg" alt="Iced Drinks" class="img-fluid">
+                            <p>Summer Fun</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-        <div class="follow-us">
-            <p>Follow us</p>
-            <div class="column">
-                <table>
-                    <tr>
-                        <td>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                        </td>
-                    </tr>
-                </table>
+    <footer class="footer bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 follow-us">
+                    <h6>Follow Us:</h6>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+                <div class="col-md-4 subscribe">
+                    <h6>Subscribe and gain privileged access to exclusive offers!</h6>
+                    <form class="subscribe-form">
+                        <input type="email" class="form-control" placeholder="Enter your email address">
+                        <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-4 contact">
+                    <h6>Call Us:</h6>
+                    <p>(334) 202-4792</p>
+                </div>
             </div>
         </div>
-        <div class="subscribe">
-            <p>Subscribe and gain privileged access to exclusive offers!</p>
-            <form>
-                <input type="email" placeholder="Enter your email address">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-        <div class="contact">
-            <p>Call us</p>
-            <p>(334) 202-4792</p>
-        </div>
-    </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
