@@ -22,6 +22,10 @@ body {
     padding: 1rem;
 }
 
+.bg-custom {
+    background-color: #005f73 !important;
+}
+
 .navbar .logo {
     color: #CA6702;
     font-size: 24px;
@@ -49,6 +53,14 @@ body {
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000000 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #333333 !important; 
 }
 
 .navbar .auth-links {
