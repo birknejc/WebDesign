@@ -209,6 +209,16 @@ body {
         padding: 0.5rem;
     }
 
+
+    .navbar .auth-links {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navbar .auth-links a {
+        padding: 0.5rem;
+    }
+
     .banner {
         grid-template-columns: 1fr;
     }

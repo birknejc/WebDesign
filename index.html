@@ -15,27 +15,30 @@
 </header>
 
 <!-- Navbar -->
-<div class="navbar">
-    <div class="logo">Birky's Beans</div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="product.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+    <a class="navbar-brand logo" href="#">Birky's Beans</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-    <div class="auth-links">
-        <a href="#login">Log In</a>
-        <a href="#signup">Sign Up</a>
+        <div class="auth-links ml-auto">
+            <a href="#login" class="nav-link">Log In</a>
+            <a href="#signup" class="nav-link">Sign Up</a>
+        </div>
     </div>
-</div>
+</nav>
 
 <div class="banner">
     <div class="column">
         <img src="images/Desktop_Coffee_shop.jpg" 
              srcset="images/Mobile_Coffee_Shop.jpg 600w, images/Tablet_Coffee_Shop.jpg 768w, images/Desktop_Coffee_shop.jpg 1024w"
-             sizes="(max-width: 600px) 100vw, (max-width: 768px) 50vw, 33vw"
+             sizes="(max-width: 600px) 100vw, (max-width: 768px) 75vw, 50vw"
              alt="A cozy coffee shop"
              class="responsive-image">
     </div>
@@ -72,6 +75,10 @@
         <p>515-555-5555</p>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
